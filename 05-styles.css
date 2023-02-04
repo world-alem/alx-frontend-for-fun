@@ -52,7 +52,7 @@ margin: 0;
     
     
     }
-
+ 
 
 ::placeholder  {
 font-style: italic;
@@ -65,10 +65,12 @@ padding: 1rem;
 margin: 0;
 background-color: var(--color-white);
 }
-.form-group :focus-within{
+.form-group:focus-within {
   background-color: var(--color-light-grey);
   transition: .3s;
+
 }
+
 /* Form field
 ============================= */
 .form-field-container{
@@ -91,7 +93,7 @@ position: relative;
 }
 
 
-.form-group .form-help :focus{
+.form-group .form-help :focus-within{
   max-height: 20rem;
   margin: .4rem 0 0;
     
