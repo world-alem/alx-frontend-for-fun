@@ -7,9 +7,9 @@
         padding-left: 7rem;
 
     }
-    .section-title{
-        font-variant: small-caps;
-    }
+    .post-comments .section-title{
+      font-variant: small-caps;
+  }
     /* Basic form
     ============================= */
     form{
@@ -20,7 +20,7 @@ margin: 0;
     }
     fieldset{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
         justify-content: flex-start;
         border: none;
         padding: 0 0 2rem;
