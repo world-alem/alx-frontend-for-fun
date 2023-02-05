@@ -32,7 +32,7 @@ margin: 0;
       font-size: 1.4em;
       padding: 0 0.5rem;
     }
-    .form-group input, .form-group textarea {
+    input, textarea {
         position: relative;
         width:  100%;
         padding: 1.2rem;
@@ -43,8 +43,8 @@ margin: 0;
         outline: 0;
     
     }
-    .form-group input[type=text],
-    .form-group input[type=email]{
+    input[type=text],
+    input[type=email]{
       padding-right: 3rem;
     }
     .form-group input:focus, .form-group textarea:focus{
@@ -68,6 +68,7 @@ background-color: var(--color-white);
 .form-group:focus-within {
   background-color: var(--color-light-grey);
   transition: .3s;
+  
 
 }
 
@@ -93,11 +94,14 @@ position: relative;
 }
 
 
-.form-group .form-help :focus-within{
+.form-group:focus-within .form-help {
   max-height: 20rem;
   margin: .4rem 0 0;
     
 }
+
+
+
 /* SUMMARY
     1. GLOBAL
     2. LAYOUT
