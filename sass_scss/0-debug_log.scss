@@ -1,0 +1,5 @@
+// Define a variable containing the message to be printed
+$message: "Hello world";
+
+// Use the @debug directive to print the message in the debug output
+@debug $message;
