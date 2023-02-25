@@ -1,5 +1,16 @@
 @for $i from 1 through 4 {
   .col-#{$i} {
-    width: calc(100% / $i);
+    @if $i == 1 {
+      width: 100%;
+    }
+    @else if $i == 2 {
+      width: 50%;
+    }
+    @else if $i == 3 {
+      width: 33.3333333333%;
+    }
+    @else {
+      width: 25%;
+    }
   }
 }
