@@ -1,0 +1,86 @@
+body {
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  
+  input[type="checkbox"] {
+	  width: 0;
+	  height: 0;
+	  visibility: hidden;
+	}
+	label {
+	  width: 200px;
+	  height: 70px;
+	  display:block;
+	  background-color: #ebebeb;
+	  border: 2px solid gray;
+  
+	  border-radius: 100px;
+	  position: relative;
+	  cursor: pointer;
+	  transition: 0.5s;
+	}
+	label::after {
+	  content: '';
+	  width: 90px;
+	  height: 90px;
+	  background-color: #fff;
+	  position: absolute;
+	  border-radius: 70px;
+	  border: 2px solid gray;
+	  top: -25%;
+	  left: -5%;
+	  transition: 0.5s;
+	}
+	
+	input:checked + label:after {
+	  left: 102%;
+	  transform: translateX(-100%);
+	}
+	
+	input:checked + label {
+	  background-color: #e1013c;
+	  border: 2px solid gray;
+  
+	}
+	
+	label:active:after {
+	  width: 160px;
+	}
+  
+  
+	.toggle-inner {
+	  color: white;
+	  font-size: x-large;
+	}
+	
+	.toggle-inner:after {
+	  position: absolute;
+	  top: 22px;
+	  right: 25px;
+	  content: "NO";
+	  color: gray;
+	  -webkit-transition: opacity 0.5s ease-in-out;
+	  -moz-transition: opacity 0.5s ease-in-out;
+	  transition: opacity 0.5s ease-in-out;
+	}
+	.toggle-inner:before {
+	  position: absolute;
+	  top: 22px;
+	  left: 25px;
+	  content: "YES";
+	  -webkit-transition: opacity 0.5s ease-in-out;
+	  -moz-transition: opacity 0.5s ease-in-out;
+	  transition: opacity 0.5s ease-in-out;
+	}
+	
+	input + .toggle-inner:after {
+	  opacity: 1;
+	}
+	input + .toggle-inner:before {
+	  opacity: 0;
+	}

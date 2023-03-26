@@ -1,0 +1,50 @@
+ ul{
+    list-style: none;
+	height: 100px;
+	margin: 0;
+    float: left;
+ }
+ ul li{
+    position: relative;
+    float: left;
+    margin-left: 23px;
+    color: black;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+    border-radius: 15px;
+    border: 2px solid gray;
+    overflow: hidden;
+    padding: 20px;
+
+
+ }  
+
+ ul li span {
+	display: block;
+	height: 29px;
+	line-height: 29px;
+		
+}
+.icon{
+    position: relative;
+    display: block;
+    height: 375px;
+    width: 265px;
+}
+.i-html{
+    background-image: url("0-sprite.png");
+    background-position: left;
+
+}
+.i-css{
+    background-image: url("0-sprite.png");
+    background-position: center;
+
+}
+.i-js{
+    background-image: url("0-sprite.png");
+    background-position: right;
+
+}

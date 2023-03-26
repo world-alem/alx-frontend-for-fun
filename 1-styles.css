@@ -1,0 +1,25 @@
+a {
+	text-decoration: none;
+    color: hsl(346deg 72% 39%);
+	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	-webkit-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+	transition: all .6s ease-in-out;
+    display: inline-block;
+}
+
+
+a::after {
+	content: '';
+	background: hsl(346deg 72% 39%);
+	height: 2px;
+	width: 0;
+	transition: width 1s;
+    display: block;
+	}
+a:hover::after {
+		width: 100%;
+		}
+ 
