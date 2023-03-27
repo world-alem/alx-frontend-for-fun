@@ -43,9 +43,9 @@ padding: 0 0.5rem;
   outline: 0;
 
 }
-input[type=text],
-input[type=email],
-input[type=textarea]{
+input[type="text"],
+input[type="email"],
+input[type="textarea"]{
   position: relative;
   width:  100%;
   padding: 1.2rem;
